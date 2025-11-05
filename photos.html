@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Photo Proofs - [Client Name]</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #0056b3;
+            margin-bottom: 5px;
+        }
+        p {
+            text-align: center;
+        }
+
+        /* --- STYLES FOR GRID (ROWS AND COLUMNS) --- */
+        .photo-grid {
+            /* 1. Use CSS Grid to arrange items */
+            display: grid;
+            
+            /* 2. Define the columns: repeat for as many columns as fit */
+            /* This creates a responsive grid: 
+               It fits items of min size 300px, creating multiple columns */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            
+            /* 3. Spacing between photos */
+            gap: 20px; 
+            padding: 20px 0;
+            margin: 30px 0;
+        }
+
+        .photo-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+            /* Flexbox can center the label content if needed, but not strictly necessary here */
+        }
+        
+        .photo-item img {
+            /* Image will take up 100% of the item's width */
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .photo-label {
+            padding: 12px;
+            font-weight: bold;
+            font-size: 1.3em;
+            background-color: #eee;
+            border-top: 1px solid #ddd;
+        }
+
+        /* --- INSTRUCTIONS/CALL TO ACTION --- */
+        .instructions {
+            margin-top: 40px;
+            padding: 25px;
+            background-color: #e6f0ff; 
+            border-left: 5px solid #0056b3;
+            text-align: left;
+            line-height: 1.6;
+            border-radius: 4px;
+        }
+        .instructions h3 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+        .instructions p {
+            text-align: left;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Proofs for [Client Name]</h1>
+        <p>Review the watermarked photos below and note the numbers of the ones you wish to purchase.</p>
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="Screenshot_20250713-201210_WhatsApp (1)_watermarked.jpg" alt="Photo 1 Proof">
+                <div class="photo-label">Photo 1</div>
+            </div>
+
+            <div class="photo-item">
+                <img src="Screenshot_20250918-113800_Files by Google_watermarked.jpg" alt="Photo 2 Proof">
+                <div class="photo-label">Photo 2</div>
+            </div>
+
+            <div class="photo-item">
+                <img src="IMG_20250705_102641_994_watermarked.jpg" alt="Photo 3 Proof">
+                <div class="photo-label">Photo 3</div>
+            </div>
+
+            <div class="photo-item">
+                <img src="Screenshot_20250702-120116_ChatGPT (1)_watermarked.jpg" alt="Photo 4 Proof">
+                <div class="photo-label">Photo 4</div>
+            </div>
+
+            <div class="photo-item">
+                <img src="20250929_100548743[1].jpg" alt="Photo 5 Proof">
+                <div class="photo-label">Photo 5</div>
+            </div>
+            
+            </div>
+
+        <div class="instructions">
+            <h3>✅ How to Select and Purchase:</h3>
+            <p>1. Review all the watermarked photos in the grid above.</p>
+            <p>2. Note down the **numbers** of the photos you wish to purchase.</p>
+            <p>3. Send me your selection via **WhatsApp** or **Facebook Messenger**.</p>
+            <p>4. Once payment is confirmed, I will send you the **high-resolution, unwatermarked** versions of your chosen photos!</p>
+        </div>
+    </div>
+</body>
+</html>
